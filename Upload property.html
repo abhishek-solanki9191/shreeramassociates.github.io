@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="imgs/favicons/favicon.png" type="image/x-icon">
+    <title>JAIPUR PROPERTY PORTAL - Home</title>
+    <link rel="stylesheet" href="style/Upload property.css">
+    <script src="JavaScript/Upload property.js"></script>
+</head>
+
+<body>
+    <head-nav>
+        <div id="head-nav">
+            <div>
+                <div class="logo">
+                    <a href="index.html"><img src="imgs/Picsart_24-07-24_16-17-30-722.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="social-info">
+                <div class="social-media">
+                    <div class="my-email"><a href="mailto:shreeramassociatesmultiplex@gmail.com"><i
+                                class="fa fa-envelope"></i>
+                            <span>Send E-mail</span></a></div>
+                    <div class="my-number"><a target="_blank" href="https://wa.link/rm57mb"><i
+                                class="fa fa-whatsapp"></i>
+                            <span>Whatsapp</span></a></div>
+                    <div class="facebook"><a href="https://www.facebook.com/SRAMPvt/" target="_blank"><i
+                                class="fa fa-facebook-square"></i> <span>FaceBook</span></a></div>
+                    <div class="instagram"><a href="https://www.instagram.com/abhi._.ek/" target="_blank"><i
+                                class="fa fa-instagram"></i> <span>Instagram</span></a></div>
+                    <div class="youtube"><a href="https://www.youtube.com/@SHREERAMASSOCIATESMULTIPLEXPvt@gmail.com"
+                            target="_blank"><i class="fa fa-youtube-play"> <span>YouTube</span></i></a></div>
+                </div>
+                <div class="contact-button">
+                    <a><button id="contactPop"><i class="fa fa-user-circle-o"></i> Contact us</button></a>
+                </div>
+                <div id="menu-btn">
+                    <button><i class="fa fa-bars"></i></button>
+                </div>
+                <script>
+                    document.getElementById("contactPop").addEventListener("click", function () {
+                        document.querySelector(".contact-page").style.display = "block";
+                    })
+
+                    let buttonstate = false;
+                    document.getElementById("menu-btn").addEventListener("click", function () {
+                        buttonstate = !buttonstate;
+                        updatastate();
+                    })
+                    const updatastate = () => {
+                        if (buttonstate == false) {
+                            let newbtn = '<button><i class="fa fa-bars"></i></button>'
+                            document.getElementById("menu-btn").innerHTML = newbtn
+                            document.querySelector("menu").style.display = "none";
+                        }
+                        else {
+                            let newbtn = '<button class="close-menu"><i class="close-menu fa fa-chevron-circle-left"></i></button>'
+                            document.getElementById("menu-btn").innerHTML = newbtn
+                            document.querySelector("menu").style.display = "block";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </head-nav>
+    <nav-bar>
+        <div id="nav-bar">
+            <div class="nav-opts">
+                <div class="nav1"><a href="index.html"><span>HOME</span></a></div>
+                <div class="nav2"><a href="Buy Property.html"><span>PROPERTY ON SALE</span></a></div>
+                <div class="nav3"><a href="Rental property.html"><span>RENTAL PROPERTY</span></a></div>
+                <div class="nav4"><a href="Upload property.html"><span>UPLOAD PROPERTY</span></a></div>
+                <div class="nav5"><a href="About us.html"><span>ABOUT US</span></a></div>
+            </div>
+        </div>
+    </nav-bar>
+    <menu>
+        <div id="menu">
+            <div id="menu-data">
+                <div class="contact-button2" id="contactPop2">
+                    <a>
+                        <span class="CB"><i class="fa fa-user-circle-o"></i> Contact us</span>
+                    </a>
+                </div>
+                <script>
+                    document.getElementById("contactPop2").addEventListener("click", function () {
+                        document.querySelector(".contact-page").style.display = "block";
+                    })
+                </script>
+                <div class="my-number"><a target="_blank" href="https://wa.link/rm57mb"><span><i
+                                class="fa fa-whatsapp"></i> Whatsapp</span></a></div>
+                <div class="my-email"><a href="mailto:shreeramassociatesmultiplex@gmail.com"> <span><i
+                                class="fa fa-envelope"></i>
+                            Send E-mail</span></a></div>
+                <div class="facebook"><a href="https://www.facebook.com/SRAMPvt/" target="_blank">
+                        <span><i class="fa fa-facebook-square"></i> FaceBook</span></a></div>
+                <div class="instagram"><a href="https://www.instagram.com/abhi._.ek/" target="_blank"><span><i
+                                class="fa fa-instagram"></i> Instagram</span></a></div>
+                <div class="youtube"><a href="https://www.youtube.com/@SHREERAMASSOCIATESMULTIPLEXPvt@gmail.com"
+                        target="_blank"><span><i class="fa fa-youtube-play"></i> YouTube</span></a></div>
+            </div>
+        </div>
+    </menu>
+    <div class="contact-page">
+        <div>
+            <div class="closeform"><button><i class="fa fa-close"></i></button></div>
+
+            <script>
+                document.querySelector(".closeform").addEventListener("click", function () {
+                    document.querySelector(".contact-page").style.display = "none";
+                })
+            </script>
+            <form id="contactForm">
+                <div>
+                    <h1>CONTACT US</h1>
+                </div>
+                <div id="contact">
+                    <input type="text" name="Name" placeholder="Enter Your Full Name" required>
+                </div>
+                <div>
+                    <input type="tel" name="Mobile" placeholder="Enter Your Mobile Number" required>
+                </div>
+                <div>
+                    <input type="email" name="Email" placeholder="Enter Your Valid Email Address" required>
+                </div>
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
+
+        <script>
+            document.getElementById("contactForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+                const formData = new FormData(this);
+                fetch("https://script.google.com/macros/s/AKfycbw93Ix1VFBGrv3BLsHQsQpZNxa9L7y6_1iLJ0KGvNj7tXJ69sFNNugJYrketwS2b0C6hA/exec", {
+                    method: "POST",
+                    body: formData,
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            alert("Form submitted successfully!");
+                            this.reset();
+                            document.querySelector(".contact-page").style.display = "none";
+                        } else {
+                            alert("There was a problem with the submission.");
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                        alert("There was a problem with the submission.");
+                    });
+            });
+        </script>
+
+    </div>
+
+    <page-body>
+        <div class="upera">
+            <h2><span>UPLOAD YOUR PROPERTY</span> At SHREE RAM ASSOCIATES MULTIPLEX Pvt. Ltd.</h2>
+            <p>
+                <b style="color: red;">''</b> We appreciate you taking the time to share this information with us. Our
+                team will carefully review your submission and get back to you as soon as possible. We understand how
+                important this process is for you, and we want to make sure everything is perfect. If you have any
+                questions or need assistance while you wait, please feel free to reach out to us. We're always here to
+                help and support you.<b style="color: red;">''</b>
+            </p>
+        </div>
+        <div class="container">
+            <h2>Upload Property Form</h2>
+            <form id="FormU">
+                <div class="form-group">
+                    <label for="dealerName">Name of Dealer</label>
+                    <input type="text" id="dealerName" name="dealerName" placeholder="Enter the dealer's name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dealerContact">Dealer's Contact Number</label>
+                    <input type="tel" id="dealerContact" name="dealerContact"
+                        placeholder="Enter the dealer's contact number" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dealerEmail">Dealer's Email</label>
+                    <input type="email" id="dealerEmail" name="dealerEmail" placeholder="Enter the dealer's email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <select id="location" name="location" required>
+                        <option value="">Select a Location</option>
+                        <option value="Adarsh Nagar">Adarsh Nagar</option>
+                        <option value="Ajmer Road">Ajmer Road</option>
+                        <option value="Amer">Amer</option>
+                        <option value="Anand Nagar">Anand Nagar</option>
+                        <option value="Ashok Nagar">Ashok Nagar</option>
+                        <option value="Agra Road">Agra Road</option>
+                        <option value="Ambabari">Ambabari</option>
+                        <option value="Alankar Nagar">Alankar Nagar</option>
+                        <option value="Bani Park">Bani Park</option>
+                        <option value="Bapu Nagar">Bapu Nagar</option>
+                        <option value="Barkat Nagar">Barkat Nagar</option>
+                        <option value="Bhawani Singh Road">Bhawani Singh Road</option>
+                        <option value="Bhagwan Das Road">Bhagwan Das Road</option>
+                        <option value="Bhankrota">Bhankrota</option>
+                        <option value="Bhatta Basti">Bhatta Basti</option>
+                        <option value="Brahmapuri">Brahmapuri</option>
+                        <option value="Bajaj Nagar">Bajaj Nagar</option>
+                        <option value="Bais Godam">Bais Godam</option>
+                        <option value="Chitrakoot">Chitrakoot</option>
+                        <option value="Civil Lines">Civil Lines</option>
+                        <option value="Chandpol">Chandpol</option>
+                        <option value="Chokdi Gangapol">Chokdi Gangapol</option>
+                        <option value="C-Scheme">C-Scheme</option>
+                        <option value="Chand Bihari Nagar">Chand Bihari Nagar</option>
+                        <option value="Chomu">Chomu</option>
+                        <option value="Chhatriya">Chhatriya</option>
+                        <option value="Durgapura">Durgapura</option>
+                        <option value="Dahar Ka Balaji">Dahar Ka Balaji</option>
+                        <option value="Devi Nagar">Devi Nagar</option>
+                        <option value="Dholai">Dholai</option>
+                        <option value="Dher Ka Balaji">Dher Ka Balaji</option>
+                        <option value="Enclave Gardens">Enclave Gardens</option>
+                        <option value="Eco City">Eco City</option>
+                        <option value="Everest Colony">Everest Colony</option>
+                        <option value="Fatehpuria">Fatehpuria</option>
+                        <option value="Fateh Tibba">Fateh Tibba</option>
+                        <option value="Fagi">Fagi</option>
+                        <option value="Frontier Colony">Frontier Colony</option>
+                        <option value="Gopalbari">Gopalbari</option>
+                        <option value="Gopalpura">Gopalpura</option>
+                        <option value="Goner Road">Goner Road</option>
+                        <option value="Gandhi Path">Gandhi Path</option>
+                        <option value="Gangapole">Gangapole</option>
+                        <option value="Girdharipura">Girdharipura</option>
+                        <option value="Govindpuri">Govindpuri</option>
+                        <option value="Gajsinghpura">Gajsinghpura</option>
+                        <option value="Galta Gate">Galta Gate</option>
+                        <option value="Harmada">Harmada</option>
+                        <option value="Hasanpura">Hasanpura</option>
+                        <option value="Hawa Sadak">Hawa Sadak</option>
+                        <option value="Hathroi">Hathroi</option>
+                        <option value="Indira Bazar">Indira Bazar</option>
+                        <option value="Indrapuri Colony">Indrapuri Colony</option>
+                        <option value="Jagatpura">Jagatpura</option>
+                        <option value="Jhotwara">Jhotwara</option>
+                        <option value="Jalupura">Jalupura</option>
+                        <option value="Jawahar Nagar">Jawahar Nagar</option>
+                        <option value="Jamdoli">Jamdoli</option>
+                        <option value="Kalwar Road">Kalwar Road</option>
+                        <option value="Kanakpura">Kanakpura</option>
+                        <option value="Karni Vihar">Karni Vihar</option>
+                        <option value="Kishanpole Bazar">Kishanpole Bazar</option>
+                        <option value="Khatipura">Khatipura</option>
+                        <option value="Krishna Nagar">Krishna Nagar</option>
+                        <option value="Kukas">Kukas</option>
+                        <option value="Kundan Nagar">Kundan Nagar</option>
+                        <option value="Kalyanpura">Kalyanpura</option>
+                        <option value="Lal Kothi">Lal Kothi</option>
+                        <option value="Laxmi Nagar">Laxmi Nagar</option>
+                        <option value="Lalarpura">Lalarpura</option>
+                        <option value="Loha Mandi">Loha Mandi</option>
+                        <option value="Malviya Nagar">Malviya Nagar</option>
+                        <option value="Mansarovar">Mansarovar</option>
+                        <option value="Muhana">Muhana</option>
+                        <option value="Murlipura">Murlipura</option>
+                        <option value="Mahaveer Nagar">Mahaveer Nagar</option>
+                        <option value="Mahapura">Mahapura</option>
+                        <option value="Moti Doongri">Moti Doongri</option>
+                        <option value="Mohanpura">Mohanpura</option>
+                        <option value="Narayan Singh Circle">Narayan Singh Circle</option>
+                        <option value="Nehru Nagar">Nehru Nagar</option>
+                        <option value="Nandpuri">Nandpuri</option>
+                        <option value="Nirman Nagar">Nirman Nagar</option>
+                        <option value="New Sanganer Road">New Sanganer Road</option>
+                        <option value="Nangal Jaisabohra">Nangal Jaisabohra</option>
+                        <option value="Pratap Nagar">Pratap Nagar</option>
+                        <option value="Panchyawala">Panchyawala</option>
+                        <option value="Padampura">Padampura</option>
+                        <option value="Panipech">Panipech</option>
+                        <option value="Pink City">Pink City</option>
+                        <option value="Prem Nagar">Prem Nagar</option>
+                        <option value="Raja Park">Raja Park</option>
+                        <option value="Ramganj Bazar">Ramganj Bazar</option>
+                        <option value="Riddhi Siddhi">Riddhi Siddhi</option>
+                        <option value="Ramgarh">Ramgarh</option>
+                        <option value="Rajendra Nagar">Rajendra Nagar</option>
+                        <option value="Ratanada">Ratanada</option>
+                        <option value="Ramniwas Bagh">Ramniwas Bagh</option>
+                        <option value="Rawat Nagar">Rawat Nagar</option>
+                        <option value="Sanganer">Sanganer</option>
+                        <option value="Sodala">Sodala</option>
+                        <option value="Shyam Nagar">Shyam Nagar</option>
+                        <option value="Sirsi Road">Sirsi Road</option>
+                        <option value="Sindhi Colony">Sindhi Colony</option>
+                        <option value="Shastri Nagar">Shastri Nagar</option>
+                        <option value="Sethi Colony">Sethi Colony</option>
+                        <option value="Shivdaspura">Shivdaspura</option>
+                        <option value="Subhash Chowk">Subhash Chowk</option>
+                        <option value="Sushilpura">Sushilpura</option>
+                        <option value="Surajpole">Surajpole</option>
+                        <option value="Sitapura">Sitapura</option>
+                        <option value="Sunder Nagar">Sunder Nagar</option>
+                        <option value="Tilak Nagar">Tilak Nagar</option>
+                        <option value="Tonk Road">Tonk Road</option>
+                        <option value="Transport Nagar">Transport Nagar</option>
+                        <option value="Todi Nagar">Todi Nagar</option>
+                        <option value="Udaipuria">Udaipuria</option>
+                        <option value="Umrao Vihar">Umrao Vihar</option>
+                        <option value="Utsav Vihar">Utsav Vihar</option>
+                        <option value="Vaishali Nagar">Vaishali Nagar</option>
+                        <option value="Vidhyadhar Nagar">Vidhyadhar Nagar</option>
+                        <option value="Vivek Vihar">Vivek Vihar</option>
+                        <option value="Vasant Vihar">Vasant Vihar</option>
+                        <option value="Vishwakarma Industrial Area">Vishwakarma Industrial Area</option>
+                        <option value="Wardha Colony">Wardha Colony</option>
+                        <option value="Walled City">Walled City</option>
+                        <option value="Yadgar Nagar">Yadgar Nagar</option>
+                        <option value="Yamuna Colony">Yamuna Colony</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="propertyType">Property Type</label>
+                    <select id="propertyType" name="propertyType" required>
+                        <option value="">Select Property Type</option>
+                        <option value="rental">Rental</option>
+                        <option value="forSale">For Sale</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Price (in ₹)</label>
+                    <input type="number" id="price" name="price" placeholder="Enter the property price" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="about">About Property</label>
+                    <input type="text" id="about" name="about"
+                        placeholder="About Your property e.g. 2BHK indipendent house in Sitapura" required>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="details" name="details" rows="4"
+                        placeholder="Provide additional details like size, rooms, amenities, etc." required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <script>
+                document.getElementById("FormU").addEventListener("submit", function (event) {
+                    event.preventDefault();
+
+
+                    const formData = new FormData(this);
+
+                    fetch("https://script.google.com/macros/s/AKfycbx-a8M7K02Urj-CJ72TjtCvK55EYGfHwdUtHBZL-rSTvsAS_j8TrfLVWntM2WGQIV23Fg/exec", {
+                        method: "POST",
+                        body: formData,
+                    })
+                        .then(response => {
+                            if (response.ok) {
+                                alert("Form submitted successfully! We'll Contact you Soon");
+                                this.reset();
+                            } else {
+                                alert("There was a problem with the submission.");
+                            }
+                        })
+                        .catch(error => {
+                            console.error("Error:", error);
+                            alert("There was a problem with the submission.");
+                        });
+                });
+            </script>
+        </div>
+
+    </page-body>
+
+    <page-footer>
+        <div class="Footer">
+            <div class="Footer-part1">
+                <div class="Footer-section1">
+                    <div>
+                        <div><img src="imgs/logo - no background.png" alt=""></div>
+                    </div>
+                    <div class="F-section1-details">
+                        <div class="Footer-address"><a
+                                href="https://google.com/maps/dir/26.8589535,75.8199274/shree+ram+multiplex+jaipur/@26.8454399,75.8097592,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x396db70062e199a1:0x921eba58273867f9!2m2!1d75.8415446!2d26.831984?entry=ttu&g_ep=EgoyMDI0MDkwOS4wIKXMDSoASAFQAw%3D%3D">
+                                <span><i class="fa fa-map-marker"></i> Vidhya Nagar, Mahal road next to Gopal Ji Deary
+                                    at 1st Floor ,Jagatpura ,Jaipur ,Rajasthan ,302017</span></a>
+                        </div>
+                        <div class="contact-number">
+                            <span><i class="fa fa-phone"></i> 9314029191,9314029192</span>
+                        </div>
+                        <div class="Foot-dir-name">
+                            <span>Founder - Mr.Pradeep Solanki</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Footer-section2">
+                    <h3>Survices</h3>
+                    <ul>
+                        <li><a href="Buy Property.html"><span>Buy Property</span></a></li>
+                        <li><a href="Rental property.html"><span>Rental Property</span></a></li>
+                        <li><a href="Upload property.html"><span>Upload Property</span></a></li>
+                        <li><a href="index.html#services"><span>Construction & Maping</span></a></li>
+                        <li><a href="About us.html"><span>About us</span></a></li>
+                    </ul>
+                </div>
+                <div class="Footer-section3">
+                    <h3>Sponsers & investors</h3>
+                    <ul>
+                        <li><a href="https://liveworldnews.in/"><span>LIVE WORLD NEWS</span></a></li>
+                        <li><a href=""><span>MSP FOUNDATION</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="copyright-tag">
+                <p>© Shree Ram Associates Multiplex Pvt. Ltd.</p>
+            </div> -->
+        </div>
+    </page-footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="imgs/favicons/favicon.png" type="image/x-icon">
+    <title>JAIPUR PROPERTY PORTAL - Buy Property</title>
+    <link rel="stylesheet" href="style/Buy Property.css">
+</head>
+
+<body>
+    <head-nav>
+        <div id="head-nav">
+            <div>
+                <div class="logo">
+                    <a href="index.html"><img src="imgs/Picsart_24-07-24_16-17-30-722.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="social-info">
+                <div class="social-media">
+                    <div class="my-email"><a href="mailto:shreeramassociatesmultiplex@gmail.com"><i class="fa fa-envelope"></i>
+                            <span>Send E-mail</span></a></div>
+                    <div class="my-number"><a target="_blank" href="https://wa.link/rm57mb"><i
+                                class="fa fa-whatsapp"></i>
+                            <span>Whatsapp</span></a></div>
+                    <div class="facebook"><a href="https://www.facebook.com/SRAMPvt/" target="_blank"><i
+                                class="fa fa-facebook-square"></i> <span>FaceBook</span></a></div>
+                    <div class="instagram"><a href="https://www.instagram.com/abhi._.ek/" target="_blank"><i
+                                class="fa fa-instagram"></i> <span>Instagram</span></a></div>
+                    <div class="youtube"><a href="https://www.youtube.com/@SHREERAMASSOCIATESMULTIPLEXPvt@gmail.com" target="_blank"><i
+                                class="fa fa-youtube-play"> <span>YouTube</span></i></a></div>
+                </div>
+                <div class="contact-button" id="contactPop">
+                    <a><button><i class="fa fa-user-circle-o"></i> Contact us</button></a>
+                </div>
+                <div id="menu-btn">
+                    <button><i class="fa fa-bars"></i></button>
+                </div>
+                <script>
+                    document.getElementById("contactPop").addEventListener("click", function () {
+                        document.querySelector(".contact-page").style.display = "block";
+                    })
+
+                    let buttonstate = false;
+                    document.getElementById("menu-btn").addEventListener("click", function () {
+                        buttonstate = !buttonstate;
+                        updatastate();
+                    })
+                    const updatastate = () => {
+                        if (buttonstate == false) {
+                            let newbtn = '<button><i class="fa fa-bars"></i></button>'
+                            document.getElementById("menu-btn").innerHTML = newbtn
+                            document.querySelector("menu").style.display = "none";
+                        }
+                        else {
+                            let newbtn = '<button class="close-menu"><i class="close-menu fa fa-chevron-circle-left"></i></button>'
+                            document.getElementById("menu-btn").innerHTML = newbtn
+                            document.querySelector("menu").style.display = "block";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </head-nav>
+    <nav-bar>
+        <div id="nav-bar">
+            <div class="nav-opts">
+                <div class="nav1"><a href="index.html"><span>HOME</span></a></div>
+                <div class="nav2"><a href="Buy Property.html"><span>PROPERTY ON SALE</span></a></div>
+                <div class="nav3"><a href="Rental property.html"><span>RENTAL PROPERTY</span></a></div>
+                <div class="nav4"><a href="Upload property.html"><span>UPLOAD PROPERTY</span></a></div>
+                <div class="nav5"><a href="About us.html"><span>ABOUT US</span></a></div>
+            </div>
+        </div>
+    </nav-bar>
+    <menu>
+        <div id="menu">
+            <div id="menu-data">
+                <div class="contact-button2" id="contactPop2">
+                    <a>
+                        <span class="CB"><i class="fa fa-user-circle-o"></i> Contact us</span>
+                    </a>
+                </div>
+                <script>
+                    document.getElementById("contactPop2").addEventListener("click", function () {
+                        document.querySelector(".contact-page").style.display = "block";
+                    })
+                </script>
+                <div class="my-number"><a target="_blank" href="https://wa.link/rm57mb"><span><i
+                                class="fa fa-whatsapp"></i> Whatsapp</span></a></div>
+                <div class="my-email"><a href="mailto:shreeramassociatesmultiplex@gmail.com"> <span><i class="fa fa-envelope"></i>
+                            Send E-mail</span></a></div>
+                <div class="facebook"><a href="https://www.facebook.com/SRAMPvt/" target="_blank">
+                        <span><i class="fa fa-facebook-square"></i> FaceBook</span></a></div>
+                <div class="instagram"><a href="https://www.instagram.com/abhi._.ek/" target="_blank"><span><i
+                                class="fa fa-instagram"></i> Instagram</span></a></div>
+                <div class="youtube"><a href="https://www.youtube.com/@SHREERAMASSOCIATESMULTIPLEXPvt@gmail.com" target="_blank"><span><i
+                                class="fa fa-youtube-play"></i> YouTube</span></a></div>
+                <div class="Send-Requirements"><a href="Buy Property.html#result"><span><i
+                                class="fa fa-home"></i> Send Requirements</span></a></div>
+            </div>
+        </div>
+    </menu>
+    <div class="contact-page">
+        <div>
+            <div class="closeform"><button><i class="fa fa-close"></i></button></div>
+
+            <script>
+                document.querySelector(".closeform").addEventListener("click", function () {
+                    document.querySelector(".contact-page").style.display = "none";
+                })
+            </script>
+            <form id="contactForm">
+                <div><h1>CONTACT US</h1></div>
+                <div id="contact">
+                    <input type="text" name="Name" placeholder="Enter Your Full Name" required>
+                </div>
+                <div>
+                    <input type="tel" name="Mobile" placeholder="Enter Your Mobile Number" required>
+                </div>
+                <div> 
+                    <input type="email" name="Email" placeholder="Enter Your Valid Email Address" required>
+                </div>
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
+        
+        <script>
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault(); 
+                const formData = new FormData(this);
+                fetch("https://script.google.com/macros/s/AKfycbw93Ix1VFBGrv3BLsHQsQpZNxa9L7y6_1iLJ0KGvNj7tXJ69sFNNugJYrketwS2b0C6hA/exec", {
+                    method: "POST",
+                    body: formData,
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert("Form submitted successfully!");
+                        this.reset();
+                        document.querySelector(".contact-page").style.display = "none";
+                    } else {
+                        alert("There was a problem with the submission.");
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    alert("There was a problem with the submission.");
+                });
+            });
+        </script>
+        
+    </div>
+    <page-body>
+        <script src="JavaScript/Buy property.js"></script>
+        <div class="search">
+            <input type="text" name="" id="find" placeholder="Enter Location/size... e.g. Malviya nagar/3BHK">
+            <a href="Buy Property.html#"><button onclick="search()"><i class="fa fa-search"></i></button></a>
+        </div>
+
+        <script>
+            function search() {
+                let filter = document.getElementById('find').value.toUpperCase();
+                let item = document.querySelectorAll('.card');
+                let l = document.getElementsByClassName('content');
+                for (var i = 0; i <= l.length; i++) {
+                    let a = item[i].getElementsByClassName('content')[0];
+                    let value = a.innerHTML || a.innerText || a.textContent;
+                    if (value.toUpperCase().indexOf(filter) > -1) {
+                        item[i].style.display = "";
+                    }
+                    else {
+                        item[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+        <div id="property">
+            <p class="loader"></p>
+        </div>
+        <div class="BUY-PERA">
+            <div>
+                <a href="Buy Property.html#result"><b>if you haven't found result then you can contact us and tell us
+                        about your requirments</b></a>
+                <h1>Welcome to Shree Ram Associates Multiplex Pvt. Ltd.</h1><br>
+                <p>
+                    At Shree Ram Associates Multiplex Pvt. Ltd., we are committed to delivering exceptional real estate
+                    experiences, built on trust, transparency, and integrity. Our mission is to provide luxurious living
+                    spaces that exceed your expectations.
+                    Are you ready to own your perfect haven? Look no further! At Shree Ram Associates Multiplex Pvt.
+                    Ltd., our exclusive property collection offers a wide range of exceptional homes, carefully curated
+                    to meet your unique needs and aspirations. From sleek modern apartments to spacious family homes,
+                    and from vibrant city centers to serene countryside retreats, our diverse portfolio has something
+                    for everyone.
+                </p>
+            </div>
+            <br>
+            <div>
+                <h2>At Shree Ram Associates Multiplex Pvt. Ltd., we offer:</h2>
+                <ul>
+                    <li>Expert guidance in finding ideal properties</li>
+                    <li>Extensive listings across prime locations</li>
+                    <li>Transparent and secure transactions</li>
+                    <li>Dedicated customer support</li>
+                </ul><br>
+                <p>
+                    <b>Find your perfect home with us</b>
+                </p>
+                Search for properties by location, type, bedrooms and bathrooms and View stunning
+                images,
+                detailed descriptions, and take virtual tours. Our knowledgeable team is always available to assist.
+                Discover your ideal home, where memories are made, and dreams come alive. Browse our listings now
+                and take the first step towards owning your perfect haven. Contact us today to schedule a viewing
+                and make your homeownership dreams a reality!
+                </p>
+            </div>
+        </div>
+
+        <div class="Deal-box">
+            <div id="result" class="Project-box">
+                <div class="PB">
+                    <div>
+                        <h1>Shree Ram Associates Multiplex Pvt. Ltd.</h1>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A et delectus voluptatem numquam
+                            asperiores magnam, earum qui aut aliquam ducimus atque quae obcaecati!
+                        </p>
+                    </div>
+                    <div>
+                        <button id="projects">See Projects</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects">
+
+        </div>
+
+        <div class="requirment-form">
+
+            <form id="Requirement-form">
+                <h1>SEND YOUR REQUIREMENTS</h1>
+                <div>
+                    <input type="text" name="Name" placeholder="Enter Your Full Name" required>
+                </div>
+                <div>
+                    <input type="tel" name="Mobile" placeholder="Enter Your Mobile Number" required>
+                </div>
+                <div>
+                    <input type="email" name="Email" placeholder="Enter Your Valid Email Address" required>
+                </div>
+                <div>
+                    <textarea name="Requirement" id="Requirement" placeholder="Enter Your Requirements"></textarea>
+                </div>
+                <input class="submit-requirment" type="submit" name="submit" id="submit">
+            </form>
+
+        </div>
+
+        <script>
+            document.getElementById("Requirement-form").addEventListener("submit", function(event) {
+                event.preventDefault(); 
+        
+                
+                const formData = new FormData(this);
+        
+                fetch("https://script.google.com/macros/s/AKfycbyIQ45UwpEdfF5rkRfGEMNCNr7WgaLh3fRD35vs5Yx8FUvAt4SwHNAqwJdWi_j2JWmP/exec", {
+                    method: "POST",
+                    body: formData,
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert("Form submitted successfully!");
+                        this.reset();
+                    } else {
+                        alert("There was a problem with the submission.");
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    alert("There was a problem with the submission.");
+                });
+            });
+        </script>
+
+    </page-body>
+    <page-footer>
+        <div class="Footer">
+            <div class="Footer-part1">
+                <div class="Footer-section1">
+                    <div>
+                        <div><img src="imgs/logo - no background.png" alt=""></div>
+                    </div>
+                    <div class="F-section1-details">
+                        <div class="Footer-address"><a
+                                href="https://google.com/maps/dir/26.8589535,75.8199274/shree+ram+multiplex+jaipur/@26.8454399,75.8097592,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x396db70062e199a1:0x921eba58273867f9!2m2!1d75.8415446!2d26.831984?entry=ttu&g_ep=EgoyMDI0MDkwOS4wIKXMDSoASAFQAw%3D%3D">
+                                <span><i class="fa fa-map-marker"></i> Vidhya Nagar, Mahal road next to Gopal Ji Deary
+                                    at
+                                    1st Floor,Jagatpura,Jaipur,Rajasthan,302017</span></a>
+                        </div>
+                        <div class="contact-number">
+                            <span><i class="fa fa-phone"></i> 9314029191,9314029192</span>
+                        </div>
+                        <div class="Foot-dir-name">
+                            <span>Founder - Mr.Pradeep Solanki</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Footer-section2">
+                    <p>Survices</p>
+                    <ul>
+                        <li><a href="Buy Property.html"><span>Buy Property</span></a></li>
+                        <li><a href="Rental property.html"><span>Rental Property</span></a></li>
+                        <li><a href="Upload property.html"><span>Upload Property</span></a></li>
+                        <li><a href="index.html#services"><span>Construction & Maping</span></a></li>
+                        <li><a href="About us.html"><span>About us</span></a></li>
+                    </ul>
+                </div>
+                <div class="Footer-section3">
+                    <P>Sponsers & investors</P>
+                    <ul>
+                        <li><a href="https://liveworldnews.in/"><span>LIVE WORLD NEWS</span></a></li>
+                        <li><a href=""><span>MSP FOUNDATION</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="copyright-tag">
+                <p>© Shree Ram Multiplex Pvt. Ltd.</p>
+            </div> -->
+        </div>
+    </page-footer>
+</body>
+
+</html>

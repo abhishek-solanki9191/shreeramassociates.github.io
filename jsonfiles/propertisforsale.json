@@ -1,0 +1,136 @@
+[
+    {
+        "id": 1,
+        "image": "imgs/house-imgs/house1.jpeg",
+        "location": "Sanganer",
+        "dealer": "Shree Ram Associates Multiplex",
+        "price": "Rs.25,000,000",
+        "details": "4bhk independent house with garden facing",
+        "number": "98281XXXXX"
+    },
+    {
+        "id": 2,
+        "image": "imgs/house-imgs/house2.jpeg",
+        "location": "Bajaj nagar",
+        "dealer": "Krishna Homes",
+        "price": "Rs.75,000,000",
+        "details": "6BHK indipendent house in Bajaj Nagar",
+        "number": "98281XXXXX"
+    },
+    {
+        "id": 3,
+        "image": "imgs/flat-imgs/flat6.jpeg",
+        "location": "jagatpura",
+        "dealer": "Shree Ram Associates Multiplex",
+        "price": "Rs.35,00,000",
+        "details": "3bhk flat in Jagatpura near bombay hospital",
+        "number": "98281XXXXX"
+    },
+    {
+        "id": 4,
+        "image": "imgs/flat-imgs/flat7.jpeg",
+        "location": "veshali nagar",
+        "dealer": "Shree Ram Associates Multiplex",
+        "price": "Rs.45,00,000",
+        "details": "4bhk flat in veshali nagar",
+        "number": "98281XXXXX"
+    },
+    {
+        "id": 5,
+        "image": "imgs/house-imgs/house3.jpeg",
+        "location": "Bajaj nagar",
+        "price": "Rs.35,000,000",
+        "details": "5bhk house in Bajaj nagar with garden facing ",
+        "number": "98281XXXXX"
+    },
+    {
+        "id": 1,
+        "image": "imgs/house-imgs/house4.jpeg",
+        "location": "jagatpura",
+        "price": "Rs.12,500,000",
+        "dealer": "Shree Ram Associates Multiplex",
+        "details": "5bhk house in Jagatpura with garden facing",
+        "number": "98281XXXXX"
+    },
+    {
+        "id": 1,
+        "image": "imgs/house-imgs/house5.jpeg",
+        "location": "Jhotwada",
+        "dealer": "RK Builders",
+        "price": "Rs.35,00,000",
+        "details": "this 4bhk house in Jhotwada with garden facing",
+        "number": "98281XXXXX"
+    },
+    {
+        "id": 1,
+        "image": "imgs/house-imgs/house6.jpeg",
+        "location": "gopalpura",
+        "dealer": "Shree Ram Associates Multiplex",
+        "price": "Rs.25,000,000",
+        "details": "4bhk house in gopalpura with garden facing",
+        "number": "98281XXXXX"
+    },
+    {
+        "id": 1,
+        "image": "imgs/house-imgs/house7.jpeg",
+        "location": "jagatpura",
+        "dealer": "Shree Ram Associates Multiplex",
+        "price": "Rs.45,00,000",
+        "details": "2bhk house in jagatpura",
+        "number": "98281XXXXX"
+    },
+    {
+        "id": 1,
+        "image": "imgs/house-imgs/house8.jpeg",
+        "location": "malviya nagar",
+        "dealer": "Shree Ram Associates Multiplex",
+        "price": "Rs.35,000,000",
+        "details": "4bhk house in malviya nagar with garden facing",
+        "number": "98281XXXXX"
+    },
+    {
+        "id": 1,
+        "image": "imgs/flat-imgs/flat1.jpeg",
+        "location": "veshali nagar",
+        "dealer": "Krishna Homes",
+        "price": "Rs.15,00,000",
+        "details": "this 2bhk flat in veshali nagar",
+        "number": "98281XXXXX"
+    },
+    {
+        "id": 1,
+        "image": "imgs/flat-imgs/flat2.jpeg",
+        "location": "jagatpura",
+        "dealer": "Krishna Homes",
+        "price": "Rs.50,00,000",
+        "details": "4bhk flat in sitapura",
+        "number": "98281XXXXX"
+    },
+    {
+        "id": 1,
+        "image": "imgs/flat-imgs/flat3.jpeg",
+        "location": "jagatpura",
+        "dealer": "Mahima Groups",
+        "price": "Rs.45,00,000",
+        "details": "3bhk flat in jagatpura on 200feet road",
+        "number": "98281XXXXX"
+    },
+    {
+        "id": 1,
+        "image": "imgs/flat-imgs/flat4.jpeg",
+        "location": "jagatpura",
+        "dealer": "Krishna Homes",
+        "price": "Rs.60,00,000",
+        "details": "5bhk flat in jagatpura",
+        "number": "98281XXXXX"
+    },
+    {
+        "id": 1,
+        "image": "imgs/flat-imgs/flat5.jpeg",
+        "location": "veshali nagar",
+        "dealer": "Shree Properties",
+        "price": "Rs.80,00,000",
+        "details": "5bhk flat in veshali nagar",
+        "number": "98281XXXXX"
+    }
+]
