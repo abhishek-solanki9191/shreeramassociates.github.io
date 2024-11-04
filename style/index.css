@@ -687,7 +687,7 @@ form input {
 
     .logo img {
         height: 7vh;
-        margin-left: 0vw;
+        margin-left: 2vw;
     }
 
     #head-nav {
@@ -714,7 +714,7 @@ form input {
 
     #Property-offer {
         width: 90vw;
-        height: 35vh;
+        height: 40vh;
         margin-top: 55vh;
         animation-name: pop-ani;
         animation-duration: 40ms;
