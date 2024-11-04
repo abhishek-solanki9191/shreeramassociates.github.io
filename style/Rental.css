@@ -75,6 +75,7 @@ html {
 .logo img {
     height: 9vh;
     margin-left: 2vw;
+    padding: 2%;
 }
 
 .contact-button button {
@@ -772,7 +773,7 @@ p {
     }
 
     .logo img {
-        height: 5vh;
+        height: 7vh;
         margin-left: 2vw;
     }
 
@@ -841,7 +842,7 @@ p {
     }
 
     .logo img {
-        height: 5vh;
+        height: 7vh;
         margin-left: 4vw;
     }
 

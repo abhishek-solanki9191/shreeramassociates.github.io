@@ -72,6 +72,7 @@ html {
 .logo img {
     height: 12vh;
     margin-left: 2vw;
+    padding: 2%;
 }
 
 .contact-button button {

@@ -74,6 +74,7 @@ html {
 .logo img {
     height: 12vh;
     margin-left: 2vw;
+    padding: 2%;
 }
 
 .contact-button button {
@@ -830,7 +831,7 @@ textarea {
     }
 
     .logo img {
-        height: 5vh;
+        height: 7vh;
         margin-left: 2vw;
     }
 
@@ -900,7 +901,7 @@ textarea {
     }
 
     .logo img {
-        height: 5vh;
+        height: 7vh;
         margin-left: 4vw;
     }
 
