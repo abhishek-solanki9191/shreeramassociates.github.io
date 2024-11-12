@@ -680,7 +680,7 @@ form input {
     }
 }
 
-@media (max-width:1080px) {
+@media (max-width:1090px) {
     .logo {
         min-width: 40vw;
     }
@@ -1554,7 +1554,7 @@ form input {
 
     .logo img {
         height: 7vh;
-        margin-left: 4vw;
+        margin-left: 5vw;
     }
 
     #head-nav {

@@ -479,7 +479,7 @@ p {
     }
 }
 
-@media (max-width:1080px) {
+@media (max-width:1090px) {
     .logo {
         min-width: 40vw;
     }

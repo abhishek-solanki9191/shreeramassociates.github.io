@@ -602,7 +602,7 @@ textarea:focus , .requirment-form input:focus{
     }
 }
 
-@media (max-width:1080px) {
+@media (max-width:1090px) {
     .logo {
         min-width: 40vw;
     }
@@ -1173,7 +1173,7 @@ textarea:focus , .requirment-form input:focus{
 
     .logo img {
         height: 7vh;
-        margin-left: 4vw;
+        margin-left: 5vw;
     }
 
     #head-nav {

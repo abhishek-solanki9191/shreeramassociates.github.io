@@ -467,7 +467,7 @@ p {
     }
 }
 
-@media (max-width:1080px) {
+@media (max-width:1090px) {
     .logo {
         min-width: 40vw;
     }
@@ -699,7 +699,7 @@ p {
 
     .logo img {
         height: 7vh;
-        margin-left: 5vw;
+        margin-left: 7vw;
     }
 
     #head-nav {
@@ -822,19 +822,6 @@ p {
 
 }
 
-@media (max-width:400px) {
-    .logo {
-        max-width: 20vw;
-        font-size: 1.5vh;
-        margin-left: -6vw;
-    }
-
-    #head-nav {
-        gap: 50vw;
-    }
-
-}
-
 @media (max-width:390px) {
     .logo {
         max-width: 20vw;
@@ -843,7 +830,7 @@ p {
 
     .logo img {
         height: 7vh;
-        margin-left: 4vw;
+        margin-left: 5vw;
     }
 
     #head-nav {
