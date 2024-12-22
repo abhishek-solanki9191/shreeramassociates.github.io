@@ -769,7 +769,6 @@ p {
     .logo {
         max-width: 20vw;
         font-size: 1.5vh;
-        margin-left: -2vw;
     }
 
     .logo img {
@@ -830,7 +829,7 @@ p {
 
     .logo img {
         height: 7vh;
-        margin-left: 7vw;
+        margin-left: 8vw;
     }
 
     #head-nav {
