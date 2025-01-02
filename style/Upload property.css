@@ -689,7 +689,6 @@ textarea {
 @media (max-width:800px) {
     .logo {
         max-width: 20vw;
-        font-size: 1.5vh;
         margin-left: 2vw;
     }
 
@@ -741,12 +740,11 @@ textarea {
 @media (max-width:600px) {
     .logo {
         max-width: 20vw;
-        font-size: 1.5vh;
     }
 
     .logo img {
         height: 7vh;
-        margin-left: 4vw;
+        margin-left: 3vw;
     }
 
     #head-nav {
@@ -764,13 +762,12 @@ textarea {
 @media (max-width:550px) {
     .logo {
         max-width: 20vw;
-        font-size: 1.5vh;
         margin-left: -5vw;
     }
 
     .logo img {
         height: 7vh;
-        margin-left: 5vw;
+        margin-left: 8vw;
     }
 
     #head-nav {
@@ -785,10 +782,6 @@ textarea {
 
     .nav-opts span{
         font-size: .7rem;
-    }
-
-    .logo span {
-        margin-left: 8vw;
     }
 
     #contactForm input {
@@ -826,17 +819,12 @@ textarea {
 @media (max-width:450px) {
     .logo {
         max-width: 20vw;
-        font-size: 1.5vh;
         margin-left: -2vw;
     }
 
     .logo img {
         height: 7vh;
-        margin-left: 4vw;
-    }
-
-    .logo span {
-        margin-left: 8vw;
+        margin-left: 5vw;
     }
 
     #head-nav {
@@ -881,18 +869,6 @@ textarea {
 
 }
 
-@media (max-width:400px) {
-    .logo {
-        max-width: 20vw;
-        font-size: 1.5vh;
-        margin-left: -4vw;
-    }
-
-    #head-nav {
-        gap: 50vw;
-    }
-
-}
 
 @media (max-width:390px) {
     .logo {
